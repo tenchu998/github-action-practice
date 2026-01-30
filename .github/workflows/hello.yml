@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Say Hello
-        run: echo "Hello, GitHub Actions! 🎉"
+        run: echo "你好，GitHub 操作！ 🎉"
 
       - name: Show Date
         run: date
