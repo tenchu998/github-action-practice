@@ -1,0 +1,22 @@
+name: Hello World
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # 允許手動觸發
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions! 🎉"
+
+      - name: Show Date
+        run: date
+
+      - name: Show System Info
+        run: |
+          echo "OS: $RUNNER_OS"
+          echo "Node version: $(node --version)"
